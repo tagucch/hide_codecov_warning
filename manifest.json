@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "hide_codecov_warning",
+  "description": "hide codecov warning",
+  "version": "1.0",
+  "icons" : {
+    "16": "web_page_16.png",
+    "32": "web_page_32.png",
+    "48": "web_page_48.png",
+    "128": "web_page_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*/pull/*"],
+      "css": ["content.css"]
+    }
+  ]
+}
